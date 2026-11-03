@@ -275,3 +275,25 @@ footer { background: var(--black); color: #9AA1A8; padding: 72px 0 40px; font-si
 .mset { grid-template-columns: 2.6fr 1fr; }
 @media (max-width: 520px) { .hero h1 { font-size: 42px; } .hero h1 .ind { padding-left: 0; } }
 .hero h1 .h1-kw { font-size: 15px; font-weight: 700; letter-spacing: .12em; color: #fff; opacity: .9; margin-bottom: 14px; }
+/* トップ画像：夜のNYオフィス街（文字を邪魔しないよう暗く、左を黒で覆う） */
+.hero .photo img { filter: brightness(.62) saturate(.85); }
+.hero .photo::after { background: linear-gradient(90deg, #0B0B0B 0%, rgba(11,11,11,.85) 30%, rgba(11,11,11,.25) 65%, rgba(11,11,11,.1) 100%), linear-gradient(0deg, #0B0B0B 0%, rgba(11,11,11,0) 45%); }
+@media (max-width: 860px) { .hero .photo::after { background: linear-gradient(0deg, #0B0B0B 10%, rgba(11,11,11,.6) 55%, rgba(11,11,11,.3) 100%); } }
+@media (max-width: 520px) { .hero .profile { display: none; } }
+/* 言語切り替え（ヘッダー） */
+.hd .lang { font-family: var(--en); font-size: 16px; letter-spacing: .08em; }
+.hd .lang:hover { color: var(--teal-l); }
+.hd .lang:lang(ja) { font-family: "Noto Sans JP", sans-serif; font-size: 13px; font-weight: 700; }
+@media (max-width: 1100px) { .hd .lang { padding: 0 14px; } }
+/* 改行の違和感をなくす：日本語は文節で折り返し、狭い画面では文中の強制改行を外す */
+html[lang="ja"] body { word-break: auto-phrase; line-break: strict; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+@media (max-width: 860px) {
+  .statement .body br, .lead br, .page-hero p br, .sub p br, .answer br { display: none; }
+}
+html[lang="en"] .hero h1 { font-size: clamp(42px, 6.6vw, 104px); }
+html[lang="en"] body { letter-spacing: 0; }
+html[lang="en"] .mbox h4 { word-break: normal; overflow-wrap: normal; hyphens: auto; font-size: 14px; }
+html[lang="en"] .mbox { font-size: 12px; hyphens: auto; }
+.menu-btn { white-space: nowrap; }
