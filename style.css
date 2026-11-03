@@ -296,3 +296,5 @@ html[lang="en"] body { letter-spacing: 0; }
 html[lang="en"] .mbox h4 { word-break: normal; overflow-wrap: normal; hyphens: auto; font-size: 14px; }
 html[lang="en"] .mbox { font-size: 12px; hyphens: auto; }
 .menu-btn { white-space: nowrap; }
+/* TOP「期間限定の事業検証チーム」を強調：太字＋枠内の余白を広げる（行の高さの増え方は3px以内） */
+.statement .boxed { font-weight: 700; padding: .2em .7em; margin: 0 .25em; line-height: 1.5; border-width: 2px; }
