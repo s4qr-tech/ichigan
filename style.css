@@ -349,3 +349,10 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .msg .body p.sns { margin-top: 16px; }
   .msg .body p:last-child { margin-bottom: 0; }
 }
+/* 代表メッセージ（PC）：スマホと同じ考え方で、区画の上下と署名・SNSの間隔を詰める */
+@media (min-width: 861px) {
+  #message { padding-top: 96px; padding-bottom: 72px; }
+  .msg .body p.sig { margin-top: 28px; }
+  .msg .body p.sns { margin-top: 16px; }
+  .msg .body p:last-child { margin-bottom: 0; }
+}
