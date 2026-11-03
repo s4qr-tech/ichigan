@@ -322,3 +322,11 @@ html[lang="en"] .mbox { font-size: 12px; hyphens: auto; }
 html[lang="en"] .pos h3, html[lang="en"] .theme h3 { word-break: normal; overflow-wrap: break-word; }
 html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
 @media (max-width: 860px) { html[lang="en"] .mbox h4 { font-size: 15px; } }
+/* スマホ：小さすぎる文字を13px以上に、タップ領域を44px以上に */
+@media (max-width: 860px) {
+  .req, .plan .tg, .mteam .tc small, .note, .crumb, .mbox .who, .phases .ph, .plan .range { font-size: 13px; }
+  .crumb a { display: inline-block; padding: 12px 0; }
+  .hd > a, .menu-btn { min-height: 44px; min-width: 44px; justify-content: center; }
+  .faq summary { min-height: 44px; }
+  .ft a { display: inline-block; padding: 8px 0; }
+}
