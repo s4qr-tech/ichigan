@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net; form-action 'self'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/budoux@0.6.4/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net/npm/budoux@0.6.4/; object-src 'none'; form-action 'self'; base-uri 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>プライバシーポリシー｜ICHIGAN</title>
 <meta name="description" content="ICHIGANがお問い合わせフォームを通じてお預かりする個人情報の取り扱いについて。">
@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" data-async-font>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap"></noscript>
 <link rel="stylesheet" href="style.css?v=3">
 <script type="application/ld+json">
@@ -75,7 +75,7 @@
       <p>ご本人の同意がある場合、および法令に基づく場合を除き、取得した個人情報を第三者に提供することはありません。プロジェクトの遂行にあたり情報の共有が必要となる場合は、事前にご本人の同意を得たうえで、必要な範囲に限って共有します。</p>
 
       <h2>5. 管理方法</h2>
-      <p>取得した情報は、Googleが提供するクラウドサービス上で管理し、アクセスできる者を業務上必要な範囲に限定します。利用目的の達成に必要な期間を過ぎた情報は、適切な方法で削除します。</p>
+      <p>取得した情報は、Googleが提供するクラウドサービス（米国 Google LLC のサービス。データは日本国外のサーバーに保存される場合があります）上で管理し、アクセスできる者を業務上必要な範囲に限定します。利用目的の達成に必要な期間を過ぎた情報は、適切な方法で削除します。</p>
 
       <h2>6. 応募できる年齢と未成年の方について</h2>
       <p>ユースの方のお問い合わせ（応募）は、応募時点で16歳から30歳までの方を対象としています。年齢は応募時点の年齢で判断します。</p>
@@ -105,27 +105,6 @@
   </div>
 </footer>
 <script src="script.js?v=1" defer></script>
-<script type="module">
-if (document.documentElement.lang === "ja") {
-  import("https://cdn.jsdelivr.net/npm/budoux@0.6.4/+esm").then(function (m) {
-    var parser = m.loadDefaultJapaneseParser();
-    document.querySelectorAll("h1 span, h2, h3, h4, p, li, summary, td, .lead, .answer, dt, dd").forEach(function (el) {
-      if (el.closest("form, .giant")) return;
-      parser.applyToElement(el);
-    });
-  }).catch(function () {});
-}
-</script>
-<script>
-(function(){
-  var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.rv').forEach(function(el){o.observe(el)});
-  var hd=document.querySelector('.hd'),b=document.querySelector('.menu-btn');
-  b.addEventListener('click',function(){var on=hd.classList.toggle('open');b.setAttribute('aria-expanded',on);b.textContent=on?'× CLOSE':'≡ MENU'});
-  var links=[].slice.call(document.querySelectorAll('.toc a'));
-  if(links.length){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
-  links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)})}
-})();
-</script>
+<script src="site.js?v=1" defer></script>
 </body>
 </html>

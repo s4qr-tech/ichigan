@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net; form-action 'self'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/budoux@0.6.4/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net/npm/budoux@0.6.4/; object-src 'none'; form-action 'self'; base-uri 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Free Consultation & Contact | ICHIGAN</title>
 <meta name="description" content="Free consultation and information requests about new business validation. It's fine if what you want to validate isn't fixed yet — we'll make a proposal tailored to your needs.">
@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" data-async-font>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap"></noscript>
 <link rel="stylesheet" href="../style.css?v=3">
 <script type="application/ld+json">
@@ -112,27 +112,6 @@
   </div>
 </footer>
 <script src="../script.js?v=1" defer></script>
-<script type="module">
-if (document.documentElement.lang === "ja") {
-  import("https://cdn.jsdelivr.net/npm/budoux@0.6.4/+esm").then(function (m) {
-    var parser = m.loadDefaultJapaneseParser();
-    document.querySelectorAll("h1 span, h2, h3, h4, p, li, summary, td, .lead, .answer, dt, dd").forEach(function (el) {
-      if (el.closest("form, .giant")) return;
-      parser.applyToElement(el);
-    });
-  }).catch(function () {});
-}
-</script>
-<script>
-(function(){
-  var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.rv').forEach(function(el){o.observe(el)});
-  var hd=document.querySelector('.hd'),b=document.querySelector('.menu-btn');
-  b.addEventListener('click',function(){var on=hd.classList.toggle('open');b.setAttribute('aria-expanded',on);b.textContent=on?'× CLOSE':'≡ MENU'});
-  var links=[].slice.call(document.querySelectorAll('.toc a'));
-  if(links.length){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
-  links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)})}
-})();
-</script>
+<script src="../site.js?v=1" defer></script>
 </body>
 </html>

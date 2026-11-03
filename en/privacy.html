@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net; form-action 'self'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/budoux@0.6.4/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdn.jsdelivr.net/npm/budoux@0.6.4/; object-src 'none'; form-action 'self'; base-uri 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Privacy Policy｜ICHIGAN</title>
+<title>Privacy Policy | ICHIGAN</title>
 <meta name="description" content="How ICHIGAN handles personal information received through the contact form.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://s4qr-tech.github.io/ichigan/en/privacy.html">
@@ -15,7 +15,7 @@
 <meta name="theme-color" content="#0B0B0B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ICHIGAN">
-<meta property="og:title" content="Privacy Policy｜ICHIGAN">
+<meta property="og:title" content="Privacy Policy | ICHIGAN">
 <meta property="og:description" content="How ICHIGAN handles personal information received through the contact form.">
 <meta property="og:url" content="https://s4qr-tech.github.io/ichigan/en/privacy.html">
 <meta property="og:image" content="https://s4qr-tech.github.io/ichigan/images/og-en.jpg">
@@ -24,7 +24,7 @@
 <meta property="og:image:alt" content="ICHIGAN | Validate new businesses with a limited-time external team">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Privacy Policy｜ICHIGAN">
+<meta name="twitter:title" content="Privacy Policy | ICHIGAN">
 <meta name="twitter:description" content="How ICHIGAN handles personal information received through the contact form.">
 <meta name="twitter:image" content="https://s4qr-tech.github.io/ichigan/images/og-en.jpg">
 <link rel="icon" href="../images/logo-mark.svg" type="image/svg+xml">
@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" media="print" data-async-font>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap"></noscript>
 <link rel="stylesheet" href="../style.css?v=3">
 <script type="application/ld+json">
@@ -75,7 +75,7 @@
       <p>We do not provide personal information to third parties except with your consent or as required by law. If sharing is necessary to carry out a project, we will obtain your consent in advance and share only what is needed.</p>
 
       <h2>5. Management</h2>
-      <p>Information is managed on cloud services provided by Google, and access is limited to those who need it for their work. Information past the period needed to achieve its purpose is deleted appropriately.</p>
+      <p>Information is managed on cloud services provided by Google (a service of Google LLC in the United States; data may be stored on servers outside Japan), and access is limited to those who need it for their work. Information past the period needed to achieve its purpose is deleted appropriately.</p>
 
       <h2>6. Eligible age and minors</h2>
       <p>Inquiries (applications) from young people are open to those aged 16 to 30 at the time of applying. Age is determined as of the time of application.</p>
@@ -105,27 +105,6 @@
   </div>
 </footer>
 <script src="../script.js?v=1" defer></script>
-<script type="module">
-if (document.documentElement.lang === "ja") {
-  import("https://cdn.jsdelivr.net/npm/budoux@0.6.4/+esm").then(function (m) {
-    var parser = m.loadDefaultJapaneseParser();
-    document.querySelectorAll("h1 span, h2, h3, h4, p, li, summary, td, .lead, .answer, dt, dd").forEach(function (el) {
-      if (el.closest("form, .giant")) return;
-      parser.applyToElement(el);
-    });
-  }).catch(function () {});
-}
-</script>
-<script>
-(function(){
-  var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.rv').forEach(function(el){o.observe(el)});
-  var hd=document.querySelector('.hd'),b=document.querySelector('.menu-btn');
-  b.addEventListener('click',function(){var on=hd.classList.toggle('open');b.setAttribute('aria-expanded',on);b.textContent=on?'× CLOSE':'≡ MENU'});
-  var links=[].slice.call(document.querySelectorAll('.toc a'));
-  if(links.length){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
-  links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)})}
-})();
-</script>
+<script src="../site.js?v=1" defer></script>
 </body>
 </html>
