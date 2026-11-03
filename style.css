@@ -336,3 +336,6 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
 }
 .doc > div { min-width: 0; } .model, .flow, .plans, .phases { max-width: 100%; }
 .model .row > *, .mset > *, .mig > * { min-width: 0; } @media (max-width: 400px) { .model .row { padding: 20px 12px; } .mteam { padding: 10px; } .mig { padding: 18px 6px 6px; } }
+.msg .sns { display: flex; justify-content: flex-end; gap: 12px; margin: 0; }
+.msg .sns a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid #3A3F45; color: #fff; text-decoration: none; font-family: var(--en); letter-spacing: .06em; }
+.msg .sns a:hover { border-color: var(--teal-l); color: var(--teal-l); }
