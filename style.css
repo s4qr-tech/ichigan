@@ -405,3 +405,9 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .ft > div:nth-child(4) { margin-top: 14px; }
   .copy { margin-top: 36px; padding-top: 20px; }
 }
+/* 事業モデル図（スマホ）：「企業の挑戦人材」が右の細い列で枠からはみ出していたため、ICHIGANのまとまりの下に全幅で積む */
+@media (max-width: 860px) {
+  .model .mset { grid-template-columns: 1fr; }
+  .model .mset > .mbox { width: 100%; }
+  .model .mbox h4, .model .mbox .who { overflow-wrap: anywhere; }
+}
