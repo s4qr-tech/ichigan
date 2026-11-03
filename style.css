@@ -310,3 +310,15 @@ html[lang="en"] .mbox { font-size: 12px; hyphens: auto; }
 .theme p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.85; }
 @media (max-width: 860px) { .themes { grid-template-columns: 1fr; } }
 .flow h3.nw { white-space: nowrap; }
+/* スマホのヘッダー：EN/JP・CONTACT・MENU が画面幅に収まるよう詰める */
+@media (max-width: 520px) {
+  .hd > * { padding: 0 12px; }
+  .hd .logo { font-size: 20px; gap: 8px; padding-left: 16px; }
+  .hd .cta b { font-size: 17px; }
+  .menu-btn { font-size: 15px; padding: 0 14px 0 10px; }
+}
+/* 番号つきリスト：内側の div まで2列のグリッドになり、見出しと本文が横に並んで重なっていたのを修正 */
+.pos > div > div { display: block; padding: 0; border: 0; }
+html[lang="en"] .pos h3, html[lang="en"] .theme h3 { word-break: normal; overflow-wrap: break-word; }
+html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
+@media (max-width: 860px) { html[lang="en"] .mbox h4 { font-size: 15px; } }
