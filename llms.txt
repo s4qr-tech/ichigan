@@ -5,13 +5,13 @@
 
 ## ページ / Pages
 - [トップ](https://s4qr-tech.github.io/ichigan/) / [Home (EN)](https://s4qr-tech.github.io/ichigan/en/)
-- [事業検証支援](https://s4qr-tech.github.io/ichigan/service.html): 課題、ポジション、参画スタイル、4つの工程、流れ、成果物の構成例、料金、FAQ / [EN](https://s4qr-tech.github.io/ichigan/en/service.html)
+- [サービス](https://s4qr-tech.github.io/ichigan/service.html): 課題、ポジション、参画スタイル、4つの工程、流れ、成果物の構成例、料金、FAQ / [EN](https://s4qr-tech.github.io/ichigan/en/service.html)
 - [企業情報・代表メッセージ](https://s4qr-tech.github.io/ichigan/company.html) / [EN](https://s4qr-tech.github.io/ichigan/en/company.html)
 - [無料相談・お問い合わせ](https://s4qr-tech.github.io/ichigan/contact.html) / [EN](https://s4qr-tech.github.io/ichigan/en/contact.html)
 
 ## サービス概要 / Summary
 - 4つの工程: 調べる(DISCOVER)・仮説を立てる(DEFINE)・設計をつくる(BUILD)・検証する(VALIDATE)。任せる範囲は選べる
-- 料金（参考価格）: Scan 10万円 / Starter 15万円〜 / Standard 20万円〜 / Pro 50万円〜
+- 料金（参考価格）: Scan 10万円 / Starter 20万円〜 / Standard 35万円〜 / Pro 55万円〜
 - 期間: Scanで標準2〜3週間。貴社の工数はキックオフ・中間報告・納品の合計で約4時間
 - 体制: ICHIGANが設計・進行管理・品質責任を担い、若手チームが実行。希望に応じて企業の挑戦人材も参画
 - 対応: 業種・地域を問わず全国対応（オンライン）
