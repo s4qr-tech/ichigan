@@ -4,7 +4,7 @@
 
 // 送信先。Apps Scriptを再デプロイしてURLが変わった場合はここだけ書き換えます。
 var ENDPOINT = "https://script.google.com/macros/s/AKfycbyAcaekZC-RBVe4j0lDcsSDkzpOQ6egVXZEgR-ZYsC1Q1PzteJmIVDWNfRNz9xFgHz0/exec";
-var CONTACT_MAIL = "soh-daike@yahoo.ne.jp";
+var CONTACT_MAIL = "info@morinoa.com";
 
 /* ----- メニュー ----- */
 document.addEventListener("click", function (e) {
