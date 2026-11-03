@@ -338,3 +338,6 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
 .msg .sns { display: flex; justify-content: flex-end; gap: 12px; margin: 0; }
 .msg .sns a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid #3A3F45; color: #fff; text-decoration: none; font-family: var(--en); letter-spacing: .06em; }
 .msg .sns a:hover { border-color: var(--teal-l); color: var(--teal-l); }
+/* 代表メッセージ：本文・署名・SNSボタンの間隔を広げる */
+.msg .body p.sig { margin-top: 40px; margin-bottom: 0; }
+.msg .body p.sns { margin-top: 24px; }
