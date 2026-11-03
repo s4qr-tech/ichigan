@@ -330,3 +330,9 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .faq summary { min-height: 44px; }
   .ft a { display: inline-block; padding: 8px 0; }
 }
+@media (max-width: 860px) {
+  .ft a { padding: 12px 0; min-height: 44px; }
+  .mig .t, .hd .dl, .hd .cta { font-size: 13px; }
+}
+.doc > div { min-width: 0; } .model, .flow, .plans, .phases { max-width: 100%; }
+.model .row > *, .mset > *, .mig > * { min-width: 0; } @media (max-width: 400px) { .model .row { padding: 20px 12px; } .mteam { padding: 10px; } .mig { padding: 18px 6px 6px; } }
