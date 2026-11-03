@@ -374,3 +374,34 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
 /* 背景の大きな縁取り文字：見出しの文字と重ならないよう、薄くして上に寄せる */
 .statement .giant { top: 12px; -webkit-text-stroke: 1.5px rgba(20,184,166,.18); }
 @media (min-width: 861px) { .statement .giant { font-size: clamp(96px, 13vw, 200px); } }
+/* フッター（スマホ）：原稿の縦リストはそのままに、左右2列の表のように並べて高さを詰める
+   左：サービス　右：ICHIGANについて／お問い合わせ（ブランド紹介は上段に1行で） */
+@media (max-width: 860px) {
+  footer { padding: 36px 0 20px; }
+  .ft { grid-template-columns: 1fr 1fr; grid-template-areas: "brand brand" "svc about" "svc contact"; gap: 8px 20px; }
+  .ft > div:nth-child(1) { grid-area: brand; margin-bottom: 10px; }
+  .ft > div:nth-child(2) { grid-area: svc; }
+  .ft > div:nth-child(3) { grid-area: about; }
+  .ft > div:nth-child(4) { grid-area: contact; }
+  .ft .logo { font-size: 28px; }
+  .ft > div:first-child p { margin: 6px 0 0; font-size: 12px; line-height: 1.6; }
+  .ft h3 { margin: 6px 0 0; font-size: 12px; letter-spacing: .08em; color: #B9C0C6; }
+  .ft ul { display: block; }
+  .ft li { margin: 0; }
+  .ft a { display: flex; align-items: center; padding: 8px 0; min-height: 44px; }
+  .copy { margin-top: 12px; padding-top: 16px; font-size: 12px; }
+}
+/* フッター（PC）：スマホと同じ表の構成（左：サービス／右：ICHIGANについて＋お問い合わせ）、ブランド紹介は左に */
+@media (min-width: 861px) {
+  footer { padding: 56px 0 28px; }
+  .ft { grid-template-columns: 1.6fr 1fr 1fr; grid-template-areas: "brand svc about" "brand svc contact"; gap: 6px 40px; }
+  .ft > div:nth-child(1) { grid-area: brand; grid-row: 1 / span 2; }
+  .ft > div:nth-child(2) { grid-area: svc; grid-row: 1 / span 2; }
+  .ft > div:nth-child(3) { grid-area: about; }
+  .ft > div:nth-child(4) { grid-area: contact; }
+  .ft h3 { margin: 0 0 4px; letter-spacing: .08em; color: #B9C0C6; }
+  .ft li { margin: 0; }
+  .ft a { display: inline-block; padding: 5px 0; }
+  .ft > div:nth-child(4) { margin-top: 14px; }
+  .copy { margin-top: 36px; padding-top: 20px; }
+}
