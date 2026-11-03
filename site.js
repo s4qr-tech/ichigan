@@ -33,6 +33,13 @@ var SITE_JS = document.currentScript && document.currentScript.src;
       document.querySelectorAll("h1 span, h2, h3, h4, p, li, summary, td, .lead, .answer, dt, dd").forEach(function (el) {
         if (el.closest("form, .giant")) return;
         parser.applyToElement(el);
+        // 開きかっこの直後・閉じかっこや句読点の直前で改行しない（「 と 検証 が別の行に分かれるのを防ぐ）
+        var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), n;
+        while ((n = w.nextNode())) {
+          var t = n.nodeValue;
+          var u = t.replace(/([「『（(【〈《［\[])\u200b/g, "$1").replace(/\u200b([」』）)】〉》］\]、。，．！？])/g, "$1");
+          if (u !== t) n.nodeValue = u;
+        }
       });
     }).catch(function () {});
   }
