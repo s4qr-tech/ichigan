@@ -341,3 +341,11 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
 /* 代表メッセージ：本文・署名・SNSボタンの間隔を広げる */
 .msg .body p.sig { margin-top: 40px; margin-bottom: 0; }
 .msg .body p.sns { margin-top: 24px; }
+/* 代表メッセージ（スマホ）：黒い区画の下の余白を詰め、署名とSNSボタンをまとまりよく */
+@media (max-width: 860px) {
+  #message { padding-top: 72px; padding-bottom: 56px; }
+  .msg { gap: 28px; }
+  .msg .body p.sig { margin-top: 28px; }
+  .msg .body p.sns { margin-top: 16px; }
+  .msg .body p:last-child { margin-bottom: 0; }
+}
