@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://s4qr-tech.github.io/ichigan/sitemap.xml

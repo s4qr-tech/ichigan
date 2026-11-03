@@ -1,0 +1,13 @@
+# ICHIGAN
+
+> 新規事業の調査・仮説・設計・検証を、案件単位の期間限定チームで引き受ける事業検証サービス。
+
+- [事業検証支援](https://s4qr-tech.github.io/ichigan/service.html): 4つの工程・料金・よくある質問
+- [企業情報](https://s4qr-tech.github.io/ichigan/company.html): 代表メッセージ・会社概要
+- [お問い合わせ](https://s4qr-tech.github.io/ichigan/contact.html): 無料相談・資料請求のフォーム
+
+## 概要
+- 工程: 調べる・仮説を立てる・設計する・検証する（範囲は選択可）
+- 料金: Scan 10万円 / Starter 15万円〜 / Standard 20万円〜 / Pro 50万円〜（参考価格）
+- 期間: Scanで標準2〜3週間。貴社の工数は約4時間
+- 契約と成果責任: ICHIGANに一本化。進行はオンラインで完結
