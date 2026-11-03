@@ -13,7 +13,8 @@ var SITE_JS = document.currentScript && document.currentScript.src;
   if (hd && b) b.addEventListener("click", function () {
     var on = hd.classList.toggle("open");
     b.setAttribute("aria-expanded", on);
-    b.textContent = on ? "× CLOSE" : "≡ MENU";
+    var en = document.documentElement.lang === "en";
+    b.setAttribute("aria-label", on ? (en ? "Close menu" : "メニューを閉じる") : (en ? "Open menu" : "メニューを開く"));
   });
 
   var links = [].slice.call(document.querySelectorAll(".toc a"));

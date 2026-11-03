@@ -356,3 +356,21 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .msg .body p.sns { margin-top: 16px; }
   .msg .body p:last-child { margin-bottom: 0; }
 }
+/* メニューボタン：文字なしの3本線／× */
+.menu-btn { width: 56px; padding: 0 !important; display: none; align-items: center; justify-content: center; }
+@media (max-width: 1100px) { .menu-btn { display: flex; } }
+.menu-btn .ic, .menu-btn .ic::before, .menu-btn .ic::after { display: block; width: 22px; height: 2px; background: #fff; border-radius: 1px; transition: transform .25s, opacity .2s; }
+.menu-btn .ic { position: relative; }
+.menu-btn .ic::before, .menu-btn .ic::after { content: ""; position: absolute; left: 0; }
+.menu-btn .ic::before { top: -7px; } .menu-btn .ic::after { top: 7px; }
+.hd.open .menu-btn .ic { background: transparent; }
+.hd.open .menu-btn .ic::before { transform: translateY(7px) rotate(45deg); }
+.hd.open .menu-btn .ic::after { transform: translateY(-7px) rotate(-45deg); }
+@media (max-width: 520px) { .menu-btn { width: 52px; } }
+/* PC：ページ上部の見出し・説明文が、右側の飾りの帯と重ならないよう幅を制限（英語の長い題名は折り返す） */
+@media (min-width: 1101px) {
+  .page-hero h1, .page-hero p, .page-hero .crumb { max-width: min(680px, 56vw); }
+}
+/* 背景の大きな縁取り文字：見出しの文字と重ならないよう、薄くして上に寄せる */
+.statement .giant { top: 12px; -webkit-text-stroke: 1.5px rgba(20,184,166,.18); }
+@media (min-width: 861px) { .statement .giant { font-size: clamp(96px, 13vw, 200px); } }
