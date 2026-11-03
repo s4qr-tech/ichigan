@@ -328,7 +328,7 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .crumb a { display: inline-block; padding: 12px 0; }
   .hd > a, .menu-btn { min-height: 44px; min-width: 44px; justify-content: center; }
   .faq summary { min-height: 44px; }
-  .ft a { display: inline-block; padding: 8px 0; }
+  .ft a { display: inline-block; }
 }
 @media (max-width: 860px) {
   .ft a { padding: 12px 0; min-height: 44px; }
