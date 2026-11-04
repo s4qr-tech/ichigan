@@ -411,3 +411,5 @@ html[lang="en"] .mbox, html[lang="en"] .mbox h4 { hyphens: manual; }
   .model .mset > .mbox { width: 100%; }
   .model .mbox h4, .model .mbox .who { overflow-wrap: anywhere; }
 }
+
+.plan .price .tax{font-size:12px;font-weight:400;margin-left:6px;opacity:.7}
